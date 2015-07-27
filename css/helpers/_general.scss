@@ -1,15 +1,9 @@
 /* ------------------------------------------------------------------------------------------------------
-	Links styling
+	General Styles
 ------------------------------------------------------------------------------------------------------*/
-/* General link styling */
-a:link,
-a:active,
-a:visited { 
-	text-decoration: none; 
-	color: #fff; 
+
+article, aside, details, figure, footer, header, hgroup, nav, section {
+	display: block;
 }
-a:hover,
-a:focus { 
-	text-decoration: underline; 
-	color: #000; 
-}
+
+img { max-width: 100%; }
