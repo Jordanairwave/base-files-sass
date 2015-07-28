@@ -32,6 +32,22 @@ module.exports = function(grunt) {
 			    'js/scripts.min.js': ['js/scripts.js']
 			  }
 			}
+		},
+		svgmin: {
+			dist: {
+				files: [{
+					expand: true,
+					cwd: 'images/svg/',
+					src: ['*.svg'],
+					dest: 'images/svg/'
+				}]
+			},
+			options: {
+				plugins: [
+					{ removeViewBox: false },               // don't remove the viewbox attribute from the SVG
+					{ removeEmptyAttrs: false }             // don't remove Empty Attributes from the SVG
+				]
+			}
 		}
 	});
 	grunt.loadNpmTasks('grunt-contrib-sass');
@@ -41,4 +57,5 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-svgmin');
 	grunt.registerTask('default',['watch']);
 	grunt.registerTask('minify',['cssmin', 'uglify']);
+	grunt.registerTask('imageopt',['svgmin']);
 }
