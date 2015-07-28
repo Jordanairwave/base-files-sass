@@ -1,2 +1,7 @@
 # base-files-sass
-Sass base files
+Base files for any SASS web project.
+
+Make you have:
+* Ruby Installed
+* SASS Installed
+* Grunt Installed
