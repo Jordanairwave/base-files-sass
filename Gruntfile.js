@@ -59,10 +59,10 @@ module.exports = function(grunt) {
 						// Set to true to enable the following options…
 						expand: true,
 						// cwd is 'current working directory'
-						cwd: 'images/png/',
-						src: ['*.png'],
+						cwd: 'images/',
+						src: ['**/*.png'],
 						// Could also match cwd line above. i.e. project-directory/img/
-						dest: 'images/png/',
+						dest: 'images/',
 						ext: '.png'
 					}
 				]
@@ -75,10 +75,10 @@ module.exports = function(grunt) {
 					// Set to true to enable the following options…
 					expand: true,
 					// cwd is 'current working directory'
-					cwd: 'images/jpg/',
-					src: ['*.jpg'],
+					cwd: 'images/',
+					src: ['**/*.jpg'],
 					// Could also match cwd. i.e. project-directory/img/
-					dest: 'images/jpg/',
+					dest: 'images/',
 					ext: '.jpg'
 				}]
 			}	
