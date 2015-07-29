@@ -48,6 +48,40 @@ module.exports = function(grunt) {
 					{ removeEmptyAttrs: false }             // don't remove Empty Attributes from the SVG
 				]
 			}
+		},
+		imagemin: {
+			png: {
+				options: {
+					optimizationLevel: 5
+				},
+				files: [
+					{
+						// Set to true to enable the following options…
+						expand: true,
+						// cwd is 'current working directory'
+						cwd: 'images/png/',
+						src: ['**/*.png'],
+						// Could also match cwd line above. i.e. project-directory/img/
+						dest: 'images/png/',
+						ext: '.png'
+					}
+				]
+			},
+			jpg: {
+				options: {
+					progressive: true
+				},
+				files: [{
+					// Set to true to enable the following options…
+					expand: true,
+					// cwd is 'current working directory'
+					cwd: 'images/jpg/',
+					src: ['**/*.jpg'],
+					// Could also match cwd. i.e. project-directory/img/
+					dest: 'images/jpg/',
+					ext: '.jpg'
+				}]
+			}	
 		}
 	});
 	grunt.loadNpmTasks('grunt-contrib-sass');
@@ -55,7 +89,8 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-svgmin');
+	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.registerTask('default',['watch']);
 	grunt.registerTask('minify',['cssmin', 'uglify']);
-	grunt.registerTask('imageopt',['svgmin']);
+	grunt.registerTask('imageopt',['svgmin', 'imagemin']);
 }
