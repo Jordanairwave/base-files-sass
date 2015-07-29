@@ -52,7 +52,7 @@ module.exports = function(grunt) {
 		imagemin: {
 			png: {
 				options: {
-					optimizationLevel: 5
+					optimizationLevel: 3
 				},
 				files: [
 					{
@@ -60,7 +60,7 @@ module.exports = function(grunt) {
 						expand: true,
 						// cwd is 'current working directory'
 						cwd: 'images/png/',
-						src: ['**/*.png'],
+						src: ['*.png'],
 						// Could also match cwd line above. i.e. project-directory/img/
 						dest: 'images/png/',
 						ext: '.png'
@@ -76,7 +76,7 @@ module.exports = function(grunt) {
 					expand: true,
 					// cwd is 'current working directory'
 					cwd: 'images/jpg/',
-					src: ['**/*.jpg'],
+					src: ['*.jpg'],
 					// Could also match cwd. i.e. project-directory/img/
 					dest: 'images/jpg/',
 					ext: '.jpg'
