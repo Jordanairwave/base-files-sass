@@ -16,14 +16,14 @@ module.exports = function(grunt) {
 		},
 		cssmin: {
 			options: {
-			shorthandCompacting: false,
-			roundingPrecision: -1,
-			sourceMap: true
+				shorthandCompacting: false,
+				roundingPrecision: -1,
+				sourceMap: true
 			},
 			target: {
-			files: {
-			  'css/main.min.css': ['css/main.css']
-			}
+				files: {
+				  'css/main.min.css': ['css/main.css']
+				}
 			}
 		},
 		uglify: {
