@@ -66,20 +66,3 @@ strong {
 em { 
 	font-style: italic; 
 }
-
-
-/* ------------------------------------------------------------------------------------------------------
-	Links styling
-------------------------------------------------------------------------------------------------------*/
-/* General link styling */
-a:link,
-a:active,
-a:visited { 
-	text-decoration: none; 
-	color: $black; 
-}
-a:hover,
-a:focus { 
-	text-decoration: underline; 
-	color: $black; 
-}
