@@ -14,7 +14,7 @@
 	<link rel="apple-touch-icon" href="apple-touch-icon.png" />
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
 	
-	<! -- Geo Location - http://www.geo-tag.de/generator/en.html-->
+	<!-- Geo Location - http://www.geo-tag.de/generator/en.html -->
 	<meta name="geo.region" content="GB-OXF" />
 	<meta name="geo.placename" content="oxford" />
 	<meta name="geo.position" content="55.378051;-3.435973" />
