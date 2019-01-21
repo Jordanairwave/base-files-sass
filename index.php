@@ -3,10 +3,7 @@
 	$pageDescription = 'Page description here';
 ?>
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html>
 <head>
 	<title><?php echo $pageTitle; ?></title>
 	<meta charset="utf-8">
@@ -64,7 +61,7 @@
 			
 		</footer>
 	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script defer type="text/javascript" src="js/scripts.js?v=1.0"></script>
 </body>
 
