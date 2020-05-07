@@ -10,7 +10,7 @@
 	<meta name="description" content="<?php echo $pageDescription; ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<link href="css/main.css?v=1.0" rel="stylesheet" type="text/css" />
+	<link href="css/main.css?v=<?php echo filemtime( 'assets/css/main.css' ) ?>" rel="stylesheet" type="text/css" />
 	<link rel="apple-touch-icon" href="apple-touch-icon.png" />
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
 
@@ -56,7 +56,7 @@
 		</footer>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script defer type="text/javascript" src="js/scripts.js?v=1.0"></script>
+	<script defer type="text/javascript" src="js/scripts.js?v=<?php echo filemtime( 'assets/js/main-min.js' ) ?>"></script>
 </body>
 
 </html>
