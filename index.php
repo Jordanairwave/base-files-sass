@@ -1,6 +1,7 @@
 ﻿<?php
 	$pageTitle = 'Title Here';
 	$pageDescription = 'Page description here';
+	$socialImage = '';
 ?>
 <!DOCTYPE html>
 <html>
@@ -14,19 +15,15 @@
 	<link rel="apple-touch-icon" href="apple-touch-icon.png" />
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
 
-	<!-- Facebook -->
-	<meta property=”og:title” content=<?php echo $pageTitle; ?>>
-	<meta property=”og:type” content=”website”>
-	<meta property=”og:image” content=<?php echo "http://$_SERVER[HTTP_HOST]/social.png"; ?>>
-	<meta property=”og:url” content=<?php echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>>
-	<meta property=”og:description” content=<?php echo $pageDescription; ?>>
-	
-	<!-- Twitter -->
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:title" content=<?php echo $pageTitle; ?>>
-	<meta name="twitter:description" content=<?php echo $pageDescription; ?>>
-	<meta name="twitter:image:src" content=<?php echo "http://$_SERVER[HTTP_HOST]/social.png"; ?>>	
-	<meta name="twitter:url" content=<?php echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>>
+	<meta property="og:title" content="<?php echo $pageTitle; ?>">
+	<meta property="og:description" content="<?php echo $pageDescription; ?>">
+	<meta property=”og:image” content="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/' . $socialImage; ?>"  /> <?php //1200x630 ?>
+	<meta property="og:image:alt" content="Image description">
+	<meta property="og:locale" content="en_GB">
+	<meta property="og:type" content="website">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta property="og:url" content=<?php echo 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>>
+	<link rel="canonical" href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>">
 	
 	<script>
 	  var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
